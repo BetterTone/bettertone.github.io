@@ -1,11 +1,21 @@
 @charset "utf-8";
 
 :root {
+    /* ORIGINAL CUSTOM COLORS
     --pjgreen: #77BA67;
     --pjgreen20: #E4F1E1;
     --pjgreen40: #C9E3C2;
     --pjred: #E05245;
-    --pjblue: #67A7BA;
+    --pjblue: #67A7BA; */
+    
+    /* https://chir.ag/projects/name-that-color/ */
+    
+    --pjgreen: #74C365;
+    /*--pjgreen20: #DAECD6;*/ /* NEW */
+    --pjgreen20: #E4F1E1; /* ORIGINAL */
+    --pjgreen40: #C0D8B6;
+    --pjred: #DA5B38;
+    --pjblue: #589AAF;
     
     --nav_border: 0px dashed black;
     --nav_div_border: 0px dashed black;
