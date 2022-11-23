@@ -127,12 +127,17 @@ h5 {
     font-size: 16px;
     font-weight: bold;
     font-family: "Roboto Slab", sans-serif;
+    display: inline;
+}
+
+h6 {
+    display: inline;
 }
 /* END HEADINGS */
 
 /* BEGIN HYPERLINKS */
 a:link {
-    color: var(--pjblue);
+    color: var(--pjred);
     text-decoration: none;
 }
 a:visited {
@@ -281,7 +286,7 @@ a:active {
 }
 
 .nav-left img {
-    display: flex;
+    display: inline-flex;
     max-width: 100%;
     height: auto;
     flex: 70%;
@@ -451,7 +456,7 @@ a:active {
 	align-items: center;
 	justify-content: center;
     text-align: left;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 #page-content-main img {
@@ -459,7 +464,8 @@ a:active {
     height: auto;
     flex: 70%;
     flex-wrap: wrap;
-    display: flex;
+    /*display: flex;*/
+    display: inline-flex;
 }
 
 #page-content-main a img {
