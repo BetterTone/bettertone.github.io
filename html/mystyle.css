@@ -18,7 +18,6 @@
     --pjgreen: #66CC66;
     --pjgreen40: #C1D8B7;
     --pjgreen20: honeydew; /* #F0FFF0 */
-    /* cornsilk floralwhite honeydew ivory lightyellow mintcream oldlace seashell whitesmoke */
     --pjred: #FF3300;
     --pjblue: #6699CC;
     --pjcopper: #996666;
@@ -253,6 +252,13 @@ a:active {
 .nav-logo table tr td {
     text-align: center;
     padding: 15px 0px 15px 0px;
+}
+
+.nav-logo img {
+    width: 100%;
+    flex: 70%;
+    flex-wrap: wrap;
+    display: inline-flex;
 }
 /* ENE HEADER LOGO (FOR MOBILE) */
 
