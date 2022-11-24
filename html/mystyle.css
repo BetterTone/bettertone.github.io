@@ -2,20 +2,26 @@
 
 :root {
     /* ORIGINAL CUSTOM COLORS
-    --pjgreen: #77BA67;
-    --pjgreen20: #E4F1E1;
-    --pjgreen40: #C9E3C2;
+    --pjgreen: #78BA68;
+    --pjgreen40: #CAE2C2;
+    --pjgreen20: #E3F1E2;
     --pjred: #E05245;
-    --pjblue: #67A7BA; */
+    --pjblue: #67A7BA;
+    --pjcopper: #AD6F69; */
     
-    /* https://chir.ag/projects/name-that-color/ */
+    /*
+    https://chir.ag/projects/name-that-color/
+    https://www.colortools.net/color_make_web-safe.html
+    https://www.w3.org/wiki/CSS/Properties/color/keywords
+    */
     
-    --pjgreen: #74C365;
-    /*--pjgreen20: #DAECD6;*/ /* NEW */
-    --pjgreen20: #E4F1E1; /* ORIGINAL */
-    --pjgreen40: #C0D8B6;
-    --pjred: #DA5B38;
-    --pjblue: #589AAF;
+    --pjgreen: #66CC66;
+    --pjgreen40: #C1D8B7;
+    --pjgreen20: honeydew; /* #F0FFF0 */
+    /* cornsilk floralwhite honeydew ivory lightyellow mintcream oldlace seashell whitesmoke */
+    --pjred: #FF3300;
+    --pjblue: #6699CC;
+    --pjcopper: #996666;
     
     --nav_border: 0px dashed black;
     --nav_div_border: 0px dashed black;
