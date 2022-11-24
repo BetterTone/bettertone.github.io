@@ -525,7 +525,7 @@ a:active {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .page-content-2 {
@@ -533,7 +533,7 @@ a:active {
  	display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .page-content-3 {
