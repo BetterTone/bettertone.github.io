@@ -255,7 +255,7 @@ a:active {
 }
 
 .nav-logo img {
-    width: 100%;
+    max-width: 100%;
     flex: 70%;
     flex-wrap: wrap;
     display: inline-flex;
@@ -286,6 +286,13 @@ a:active {
 
 .nav-social a:hover {
     transform: scale(1.05);
+}
+
+.nav-social img {
+    max-width: 100%;
+    flex: 70%;
+    flex-wrap: wrap;
+    display: inline-flex;
 }
 /* END HEADER SOCIAL (FOR MOBILE) */
 
@@ -409,6 +416,13 @@ a:active {
 
 .nav-center table tr td ul li ul li {
     padding: 5px 5px 5px 5px;
+}
+
+.nav-center img {
+    max-width: 100%;
+    flex: 70%;
+    flex-wrap: wrap;
+    display: inline-flex;
 }
 /* END HEADER NAVIGATION BUTTONS (FOR ALL DISPLAYS) */
 
