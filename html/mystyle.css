@@ -251,7 +251,7 @@ a:active {
 
 .nav-logo table tr td {
     text-align: center;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 15px 15px 15px;
 }
 
 .nav-logo img {
@@ -259,7 +259,7 @@ a:active {
     height: auto;
     flex: 70%;
     flex-wrap: wrap;
-    display: inline-flex;
+    display: flex;
 }
 /* ENE HEADER LOGO (FOR MOBILE) */
 
