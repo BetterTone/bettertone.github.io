@@ -256,6 +256,7 @@ a:active {
 
 .nav-logo img {
     max-width: 100%;
+    height: auto;
     flex: 70%;
     flex-wrap: wrap;
     display: inline-flex;
@@ -290,6 +291,7 @@ a:active {
 
 .nav-social img {
     max-width: 100%;
+    height: auto;
     flex: 70%;
     flex-wrap: wrap;
     display: inline-flex;
@@ -420,6 +422,7 @@ a:active {
 
 .nav-center img {
     max-width: 100%;
+    height: auto;
     flex: 70%;
     flex-wrap: wrap;
     display: inline-flex;
