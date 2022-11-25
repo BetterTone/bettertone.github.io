@@ -251,7 +251,7 @@ a:active {
 
 .nav-logo table tr td {
     text-align: center;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 10px 15px;
 }
 
 .nav-logo img {
@@ -259,7 +259,7 @@ a:active {
     height: auto;
     flex: 70%;
     flex-wrap: wrap;
-    display: flex;
+    display: inline-flex;
 }
 /* ENE HEADER LOGO (FOR MOBILE) */
 
@@ -281,7 +281,7 @@ a:active {
 }
 
 .nav-social a {
-    display: inline-block;
+    display: inline-flex;
     transition: transform .2s;
 }
 
@@ -307,7 +307,7 @@ a:active {
     display: none;
     width: 70%;
     height: auto;
-    padding: 10px 0px 9px 11px;
+    padding: 14px 0px 9px 11px;
 }
 
 .nav-left table {
@@ -364,11 +364,12 @@ a:active {
 }
 /* END HEADER RIGHT (PHONE/ACCOUNT/SOCIAL) (FOR DESKTOP) */
 
-/* BEGIN HEADER NAVIGATION BUTTONS (FOR ALL DISPLAYS) */
+/* BEGIN HEADER NAVIGATION BUTTONS (FOR DESKTOP) */
 .nav-center {
-    display: block;
+    /*display: block;*/
+    display: none;
     width: 100%;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 15px 0px 0px;
     background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
     background-color: var(--pjgreen);
 }
@@ -379,20 +380,21 @@ a:active {
 }
 
 .nav-center table tr td {
-    text-align: center;
+    text-align: right;
 }
 
 .nav-center table tr td ul li {
     list-style: none;
     position: relative;
-    display: inline-block;
+    /*display: inline-block;*/
+    display: inline-flex;
     padding: 0px 0px 0px 4px;
     transition: transform .2s;
 }
 
 .nav-center table tr td ul li span {
     position: relative;
-    left: -22px;
+    left: 0px;
     bottom: -2px;
 }
 
@@ -419,15 +421,54 @@ a:active {
 .nav-center table tr td ul li ul li {
     padding: 5px 5px 5px 5px;
 }
+/* END HEADER NAVIGATION BUTTONS (FOR DESKTOP) */
 
-.nav-center img {
+/* BEGIN HEADER NAVIGATION BUTTONS (FOR MOBILE) */
+.nav-center-mobile {
+    /*display: block;*/
+    display: inline-flex;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
+    background-color: var(--pjgreen);
+}
+
+.nav-center-mobile table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nav-center-mobile table tr td {
+    text-align: center;
+}
+
+.nav-center-mobile table tr td ul li {
+    list-style: none;
+    position: relative;
+    /*display: inline-block;*/
+    display: inline-flex;
+    padding: 0px 0px 0px 2px;
+    transition: transform .2s;
+}
+
+.nav-center-mobile table tr td ul li span {
+    position: relative;
+    left: -22px;
+    bottom: -2px;
+}
+
+.nav-center-mobile table tr td ul li:hover {
+    transform: scale(1.08);
+}
+
+.nav-center-mobile img {
     max-width: 100%;
     height: auto;
     flex: 70%;
     flex-wrap: wrap;
     display: inline-flex;
 }
-/* END HEADER NAVIGATION BUTTONS (FOR ALL DISPLAYS) */
+/* END HEADER NAVIGATION BUTTONS (FOR MOBILE) */
 
 /* BEGIN DISPLAY SWITCHING */
 @media only screen and (min-width: 768px) {
@@ -436,6 +477,10 @@ a:active {
     }
     
     .nav-social {
+        display: none;
+    }
+    
+    .nav-center-mobile {
         display: none;
     }
     
@@ -448,15 +493,7 @@ a:active {
     }
     
     .nav-center {
-        padding: 0px 15px 0px 0px;
-    }
-    
-    .nav-center table tr td {
-        text-align: right;
-    }
-    
-    .nav-center table tr td ul li span {
-        left: 0px;
+        display: inline-flex;
     }
 }
 /* END DISPLAY SWITCHING */
@@ -929,6 +966,11 @@ a:active {
 /* END PREVIOUS ORDERS */
 
 /* BEGIN FLAVORS NAVIGATION */
+/* BEGIN FLAVORS NAVIGATION (DESKTOP) */
+.flavors-nav {
+    display: none;
+}
+
 .flavors-nav table {
     background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
     background-color: var(--pjgreen);
@@ -947,7 +989,7 @@ a:active {
 .flavors-nav table tr td ul li {
     display: inline-block;
     position: relative;
-    font-size: 16px;
+    font-size: 19px;
     padding: 0px 0px 0px 0px;
     font-family: "Roboto Slab", sans-serif;
     color: var(--pjgreen20);
@@ -963,38 +1005,113 @@ a:active {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 1px;
+  height: 2px;
   bottom: 0;
   left: 0;
   background-color: var(--pjgreen20);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.flavors-nav table tr td ul li a:hover {
-     /*color: var(--pjred);*/
-}
+
+/*.flavors-nav table tr td ul li a:hover {
+     color: var(--pjred);
+}*/
 
 .flavors-nav table tr td ul li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+/* END FLAVORS NAVIGATION (DESKTOP) */
 
 .flavors-nav-sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 260px;
+    top: 215px;
 }
 
+/* BEGIN FLAVORS NAVIGATION (MOBILE) */
+.flavors-scrollmenu {
+    display: inline-flex;
+    background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
+    background-color: var(--pjgreen);
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.flavors-scrollmenu a {
+    display: inline-block;
+    color: var(--pjgreen20);
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.flavors-scrollmenu a:hover {
+    background-color: var(--pjred);
+}
+/* END FLAVORS NAVIGATION (MOBILE) */
+
 @media only screen and (min-width: 768px) {
-    .flavors-nav table tr td ul li {
+    /*.flavors-nav table tr td ul li {
         font-size: 19px;
     }
     
     .flavors-nav table tr td ul li a:after {
         height: 2px;
+    }*/
+    
+    .flavors-nav {
+        display: inline-flex;
+    }
+    
+    .flavors-scrollmenu {
+        display: none;
+    }
+    
+    .flavors-nav-sticky {
+        top: 200px;
     }
 }
-/* END FLAVORS NAVIGATION */
+/* END FLAVORS NAVIGATION (DESKTOP) */
+
+/* BEGIN FLAVORS NAVIGATION (MOBILE) */
+.flavors-nav-mobile table {
+    background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
+    background-color: var(--pjgreen);
+    width: 100%;
+}
+
+.flavors-nav-mobile table tr td {
+    text-align: center;
+    padding: 0px 45px 0px 0px;
+}
+
+.flavors-nav-mobile table tr td {
+    font-weight: bold;
+}
+
+.flavors-nav-mobile table tr td {
+    display: inline-block;
+    /*position: relative;*/
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    font-family: "Roboto Slab", sans-serif;
+    color: var(--pjgreen20);
+}
+
+.flavors-nav-mobile table tr td a {
+    color: var(--pjgreen20);
+    text-decoration: none;
+}
+
+.flavors-nav-mobile table tr td a:hover {
+     color: var(--pjred);
+}
+/* END FLAVORS NAVIGATION (MOBILE) */
 
 /* BEGIN FLAVORS NAVIGATION (WITHOUT TABLE) */
 /* .flavors-nav {
