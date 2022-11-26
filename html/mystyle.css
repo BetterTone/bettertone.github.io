@@ -16,7 +16,7 @@
     */
     
     --pjgreen: #66CC66;
-    --pjgreen40: #C1D8B7;
+    --pjgreen40: #d6edcc; /* Selected from Quick Edit */
     --pjgreen20: honeydew; /* #F0FFF0 */
     --pjred: #FF3300;
     --pjblue: #6699CC;
@@ -968,10 +968,6 @@ a:active {
   transition: transform 0.25s ease-out;
 }
 
-/*.flavors-nav table tr td ul li a:hover {
-     color: var(--pjred);
-}*/
-
 .flavors-nav table tr td ul li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -1011,15 +1007,8 @@ a:active {
     top: 171px;
 }
 
+/* BEGIN DISPLAY SWITCHING */
 @media only screen and (min-width: 768px) {
-    /*.flavors-nav table tr td ul li {
-        font-size: 19px;
-    }
-    
-    .flavors-nav table tr td ul li a:after {
-        height: 2px;
-    }*/
-    
     .flavors-nav {
         display: inline-flex;
     }
@@ -1032,97 +1021,8 @@ a:active {
         top: 208px;
     }
 }
-/* END FLAVORS NAVIGATION (DESKTOP) */
-
-/* BEGIN FLAVORS NAVIGATION (MOBILE) */
-/*.flavors-nav-mobile table {
-    background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
-    background-color: var(--pjgreen);
-    width: 100%;
-}
-
-.flavors-nav-mobile table tr td {
-    text-align: center;
-    padding: 0px 45px 0px 0px;
-}
-
-.flavors-nav-mobile table tr td {
-    font-weight: bold;
-}
-
-.flavors-nav-mobile table tr td {
-    display: inline-block;
-    font-size: 16px;
-    padding: 5px 5px 5px 5px;
-    font-family: "Roboto Slab", sans-serif;
-    color: var(--pjgreen20);
-}
-
-.flavors-nav-mobile table tr td a {
-    color: var(--pjgreen20);
-    text-decoration: none;
-}
-
-.flavors-nav-mobile table tr td a:hover {
-     color: var(--pjred);
-}*/
-/* END FLAVORS NAVIGATION (MOBILE) */
-
-/* BEGIN FLAVORS NAVIGATION (WITHOUT TABLE) */
-/* .flavors-nav {
-    background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
-    background-color: var(--pjgreen);
-    width: 100%;
-    text-align: center;
-    padding: 3px 0px 3px 0px;
-}
-
-.flavors-nav ul {
-    font-weight: bold;
-	align-items: center;
-	justify-content: center;
-}
-
-.flavors-nav ul li {
-    display: inline-block;
-    position: relative;
-    font-size: 16px;
-    padding: 0px 0px 0px 0px;
-    font-family: "Roboto Slab", sans-serif;
-    color: var(--pjgreen20);
-}
-
-.flavors-nav ul li a {
-    color: var(--pjgreen20);
-    text-decoration: none;
-}
-
-.flavors-nav ul li a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--pjgreen20);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-.flavors-nav ul li a:hover {
-    
-}
-
-.flavors-nav ul li a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.flavors-nav-sticky {
-    position: -webkit-sticky; top: 200px;
-    position: sticky; top: 200px;
-}*/
-/* END FLAVORS NAVIGATION (WITHOUT TABLE) */
+/* END DISPLAY SWITCHING */
+/* END FLAVORS NAVIGATION */
 
 /* BEGIN FLAVORS DETAILS */
 * {
