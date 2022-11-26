@@ -177,6 +177,9 @@ a:active {
 }
 
 .header {
+    /*border: 2px solid black;
+    height: 208px;*/
+    
     background-color: var(--pjgreen20);
     border-top-style: hidden;
     border-top-width: medium;
@@ -285,7 +288,7 @@ a:active {
 }
 
 .nav-social a:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .nav-social img {
@@ -975,12 +978,6 @@ a:active {
 }
 /* END FLAVORS NAVIGATION (DESKTOP) */
 
-.flavors-nav-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 275px;
-}
-
 /* BEGIN FLAVORS NAVIGATION (MOBILE) */
 .flavors-scrollmenu {
     display: inline-flex;
@@ -1003,9 +1000,16 @@ a:active {
 }
 
 .flavors-scrollmenu a:hover {
-    background-color: var(--pjred);
+    background-color: var(--pjgreen20);
+    color: var(--pjred);
 }
 /* END FLAVORS NAVIGATION (MOBILE) */
+
+.flavors-nav-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 171px;
+}
 
 @media only screen and (min-width: 768px) {
     /*.flavors-nav table tr td ul li {
@@ -1025,13 +1029,13 @@ a:active {
     }
     
     .flavors-nav-sticky {
-        top: 220px;
+        top: 208px;
     }
 }
 /* END FLAVORS NAVIGATION (DESKTOP) */
 
 /* BEGIN FLAVORS NAVIGATION (MOBILE) */
-.flavors-nav-mobile table {
+/*.flavors-nav-mobile table {
     background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
     background-color: var(--pjgreen);
     width: 100%;
@@ -1048,7 +1052,6 @@ a:active {
 
 .flavors-nav-mobile table tr td {
     display: inline-block;
-    /*position: relative;*/
     font-size: 16px;
     padding: 5px 5px 5px 5px;
     font-family: "Roboto Slab", sans-serif;
@@ -1062,7 +1065,7 @@ a:active {
 
 .flavors-nav-mobile table tr td a:hover {
      color: var(--pjred);
-}
+}*/
 /* END FLAVORS NAVIGATION (MOBILE) */
 
 /* BEGIN FLAVORS NAVIGATION (WITHOUT TABLE) */
@@ -1116,8 +1119,8 @@ a:active {
 }
 
 .flavors-nav-sticky {
-    position: sticky;
-    top: 200px;
+    position: -webkit-sticky; top: 200px;
+    position: sticky; top: 200px;
 }*/
 /* END FLAVORS NAVIGATION (WITHOUT TABLE) */
 
@@ -1244,7 +1247,8 @@ a:active {
     /*background-image: url("../images/footer_pennies.png");
     background-repeat: no-repeat;
     background-position: center;*/
-    /*position: sticky; bottom: 0;*/
+    /*position: -webkit-sticky; bottom: 0;
+    position: sticky; bottom: 0;*/
 }
 
 .footer {
@@ -1259,7 +1263,8 @@ a:active {
     background-image: url("../images/footer_pennies.png");
     background-repeat: no-repeat;
     background-position: center;
-    /*position: sticky; bottom: 0;*/
+    /*position: -webkit-sticky; bottom: 0;
+    position: sticky; bottom: 0;*/
 }
 .footer div {
     border: var(--footer_div_border);
