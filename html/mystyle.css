@@ -380,7 +380,7 @@ a:active {
 }
 
 .nav-center table tr td {
-    text-align: right;
+    text-align: center;
 }
 
 .nav-center table tr td ul li {
@@ -475,59 +475,8 @@ a:active {
     .nav-center2 h5 {
         font-size: 19px;
     }
-    
-    .nav-center2 h6 {
-        font-size: 19px;
-    }
 }
 /* END HEADER NAVIGATION BUTTONS (VERSION 2) */
-
-/* BEGIN HEADER NAVIGATION BUTTONS (FOR MOBILE) */
-.nav-center-mobile {
-    /*display: block;*/
-    display: inline-flex;
-    width: 100%;
-    padding: 0px 0px 0px 0px;
-    background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
-    background-color: var(--pjgreen);
-}
-
-.nav-center-mobile table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.nav-center-mobile table tr td {
-    text-align: center;
-}
-
-.nav-center-mobile table tr td ul li {
-    list-style: none;
-    position: relative;
-    /*display: inline-block;*/
-    display: inline-flex;
-    padding: 0px 3px 0px 3px;
-    transition: transform .2s;
-}
-
-.nav-center-mobile table tr td ul li span {
-    position: relative;
-    left: -22px;
-    bottom: -2px;
-}
-
-.nav-center-mobile table tr td ul li:hover {
-    transform: scale(1.08);
-}
-
-.nav-center-mobile img {
-    max-width: 100%;
-    height: auto;
-    flex: 70%;
-    flex-wrap: wrap;
-    display: inline-flex;
-}
-/* END HEADER NAVIGATION BUTTONS (FOR MOBILE) */
 
 /* BEGIN DISPLAY SWITCHING */
 @media only screen and (min-width: 768px) {
@@ -536,10 +485,6 @@ a:active {
     }
     
     .nav-social {
-        display: none;
-    }
-    
-    .nav-center-mobile {
         display: none;
     }
     
@@ -553,6 +498,10 @@ a:active {
     
     .nav-center {
         display: inline-flex;
+    }
+    
+    .nav-center table tr td {
+        text-align: right;
     }
 }
 /* END DISPLAY SWITCHING */
