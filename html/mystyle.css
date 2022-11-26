@@ -972,6 +972,14 @@ a:active {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.flavors-nav h5 {
+    font-size: 19px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--pjgreen20);
+    text-underline-offset: 3px;
+}
 /* END FLAVORS NAVIGATION (DESKTOP) */
 
 /* BEGIN FLAVORS NAVIGATION (MOBILE) */
@@ -998,6 +1006,14 @@ a:active {
 .flavors-scrollmenu a:hover {
     background-color: var(--pjgreen20);
     color: var(--pjred);
+}
+
+.flavors-scrollmenu h5 {
+    font-size: 13px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--pjgreen20);
+    text-underline-offset: 5px;
 }
 /* END FLAVORS NAVIGATION (MOBILE) */
 
