@@ -1152,7 +1152,7 @@ a:active {
 /* End Desktop Screen */
 /* END FLAVORS DETAILS */
 
-/* BEGIN FOOTER */
+/* BEGIN FOOTER (VERSION 2) */
 .footer-complete {
     border: var(--footer-complete_border);
     background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
@@ -1160,59 +1160,17 @@ a:active {
     border-top-style: hidden;
     border-top-width: medium;
     border-top-color: var(--pjgreen);
-    /*background-image: url("../images/footer_pennies.png");
-    background-repeat: no-repeat;
-    background-position: center;*/
-    /*position: -webkit-sticky; bottom: 0;
-    position: sticky; bottom: 0;*/
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    clear: both;
-    width: 100%;
-    background-color: var(--pjgreen);
-    border-top-style: hidden;
-    border-top-width: medium;
-    border-top-color: var(--pjgreen);
-    background-image: url("../images/footer_pennies.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    /*position: -webkit-sticky; bottom: 0;
-    position: sticky; bottom: 0;*/
-}
-.footer div {
-    border: var(--footer_div_border);
-    color: var(--pjgreen20);
-    width: 100%;
-    padding: 30px 0px 40px 0px;
-    text-align: center;
-    line-height: normal;
-    font-style: italic;
-    font-family: "Roboto Slab", sans-serif;
-}
-
-.footer div img {
-    max-width: 100%;
-    height: auto;
-    flex: 70%;
-    flex-wrap: wrap;
-    display: flex;
 }
 
 .footer-column {
     float: left;
 }
 
-/* BEGIN FOOTER LEFT (FOR ALL DISPLAYS) */
+/* BEGIN FOOTER LEFT */
 .footer-left {
     display: flex;
     width: 100%;
-    height: 50px;
-    padding: 0px 0px 0px 0px;
-    /*background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
-    background-color: var(--pjblue);*/
+    padding: 5px 0px 5px 0px;
 }
 
 .footer-left table {
@@ -1226,67 +1184,25 @@ a:active {
     padding: 0px 0px 0px 0px;
 }
 
-.footer-left table tr td ul {
-    font-weight: bold;
-}
-
-.footer-left table tr td ul li {
-    display: inline-block;
-    position: relative;
-    font-size: 12px;
-    padding: 0px 5px 0px 0px;
+.footer-left table tr td a {
     font-family: "Roboto Slab", sans-serif;
-    color: var(--pjgreen20);
-}
-
-.footer-left table tr td ul li a {
+    font-size: 12px;
+    font-weight: bold;
     color: var(--pjgreen20);
     text-decoration: none;
+    padding: 0px 5px 0px 0px;
 }
 
-.footer-left table tr td ul li a:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--pjgreen20);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+.footer-left table tr td a:hover {
+    color: var(--pjred);
 }
+/* END FOOTER LEFT */
 
-.footer-left table tr td ul li a:hover {
-     /*color: var(--pjred);*/
-}
-
-.footer-left table tr td ul li a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.footer-left table tr td ul li span {
-    position: relative;
-    left: -20px;
-}
-
-/*.footer-left img {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    flex: 70%;
-    flex-wrap: wrap;
-}*/
-/* END FOOTER LEFT (FOR DESKTOP) */
-
-/* BEGIN FOOTER RIGHT (FOR DESKTOP) */
+/* BEGIN FOOTER RIGHT */
 .footer-right {
     display: flex;
     width: 100%;
-    height: 50px;
-    padding: 0px 0px 0px 0px;
-    /*background-color: var(--pjgreen);*/
+    padding: 0px 0px 5px 0px;
 }
 
 .footer-right table {
@@ -1297,35 +1213,24 @@ a:active {
 .footer-right table tr td {
     text-align: center;
     vertical-align: middle;
-    padding: 4px 20px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .footer-right img {
     display: inline-block;
-    width: 35px;
+    width: 25px;
     height: auto;
-    /*flex: 70%;
-    flex-wrap: wrap;*/
-    padding: 0px 0px 0px 10px;
 }
 
 .footer-right a {
     display: inline-block;
-    text-align: right;
     transition: transform .2s;
 }
 
 .footer-right a:hover {
     transform: scale(1.1);
 }
-/*.footer-right table tr td img {
-    max-width: 100%;
-    height: auto;
-    flex: 70%;
-    flex-wrap: wrap;
-    display: inline-block;
-}*/
-/* END FOOTER RIGHT (FOR DESKTOP) */
+/* END FOOTER RIGHT */
 
 /* BEGIN COPYRIGHT */
 .copyright {
@@ -1335,13 +1240,7 @@ a:active {
     clear: both;
     width: 100%;
     background-color: var(--pjred);
-}
-
-.copyright div {
-    width: 100%;
-    padding: 2px 0px 5px 0px;
-    text-align: center;
-    line-height: normal;
+    padding: 5px 0px 5px 0px;
 }
 
 .copyright-content::before {
@@ -1350,40 +1249,33 @@ a:active {
     color: var(--pjgreen20);
     content: "\00a9  2022 Penny Juice of America"
 }
+/* END COPYRIGHT */
 
 /* BEGIN DISPLAY SWITCHING */
 @media only screen and (min-width: 768px) {
-    /*.footer-complete {
-        background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
-        background-color: var(--pjgreen);
-    }*/
-    
     .footer-left {
         width: 70%;
+        height: 45px;
+        padding: 0px 0px 0px 20px;
     }
     
     .footer-left table tr td {
         text-align: left;
-        padding: 0px 0px 0px 0px;
     }
     
-    .footer-left table tr td ul li {
+    .footer-left table tr td a {
         font-size: 13px;
     }
     
     .footer-right {
         width: 30%;
+        height: 45px;
+        padding: 5px 20px 0px 0px;
     }
     
     .footer-right table tr td {
         text-align: right;
     }
-    
-    /*.copyright div {
-        text-align: left;
-        padding: 2px 0px 5px 20px;
-    }*/
 }
 /* END DISPLAY SWITCHING */
-/* END COPYRIGHT */
-/* END FOOTER */
+/* END FOOTER (VERSION 2) */
