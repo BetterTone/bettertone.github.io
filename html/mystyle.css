@@ -454,6 +454,14 @@ a:active {
     padding: 0px 0px 20px 0px;
 }
 
+.slider_image_mobile img {
+    width: 100%;
+    flex: 70%;
+    flex-wrap: wrap;
+    display: none;
+    padding: 0px 0px 20px 0px;
+}
+
 .slider_image_flavors img {
     width: 100%;
     flex: 70%;
@@ -463,11 +471,17 @@ a:active {
 }
 
 @media only screen and (min-width: 768px) {
-    /*.slider_image img {
-        display: flex;
-    }*/
-    
     .slider_image_flavors img {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slider_image img {
+        display: none;
+    }
+    
+    .slider_image_mobile img {
         display: flex;
     }
 }
