@@ -373,7 +373,7 @@ a:active {
     background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));
     background-color: var(--pjgreen);
     width: 100%;
-    justify-content: center;
+    /*justify-content: center;*/
     overflow: auto;
     white-space: nowrap;
 }
