@@ -1065,6 +1065,11 @@ a:active {
 	height: auto;
 }
 
+.flavor-details-np {
+    display: flex;
+    padding: 10px 0px 0px 0px;
+}
+
 #flavor-details-main {
     display: -ms-flexbox;
 	display: -webkit-flex;
@@ -1116,6 +1121,10 @@ a:active {
 
     .flavor-details-image img {
         align-self: center;
+    }
+    
+    .flavor-details-np {
+        display: none;
     }
 
     #flavor-details-main {
