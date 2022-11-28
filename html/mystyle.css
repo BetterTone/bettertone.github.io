@@ -16,8 +16,8 @@
     */
     
     --pjgreen: #66CC66;
-    --pjgreen40: #d6edcc; /* Selected from Quick Edit */
-    --pjgreen20: honeydew; /* #F0FFF0 */
+    --pjgreen40: #D6EDCC;
+    --pjgreen20: #F0FFF0; /* CSS honeydew */
     --pjred: #FF3300;
     --pjblue: #6699CC;
     --pjcopper: #996666;
@@ -40,6 +40,48 @@
 table, th, td {
   border: 0px dashed black;
 }
+
+/* For testing on index.html page */
+#screensize {
+    display: none;
+}
+
+@media only screen and (min-width: 1366px) {
+    .screensize-details::before {
+        content: "Screen Size = 1366px and up (Extra large devices: large laptops and desktops)"
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1366px) {
+    .screensize-details::before {
+        content: "Screen Size = 1366px to 1200px (Extra large devices: large laptops and desktops)"
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .screensize-details::before {
+        content: "Screen Size = 1200px to 992px (Large devices: laptops and desktops)"
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .screensize-details::before {
+        content: "Screen Size = 992px to 768px (Medium devices: landscape tablets)"
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .screensize-details::before {
+        content: "Screen Size = 768px to 600px (Small devices: portrait tablets and large phones)"
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .screensize-details::before {
+        content: "Screen Size = 600px and smaller (Extra small devices: phones)"
+    }
+}
+/* End testing */
 
 body {
     background-color: var(--pjgreen20);
@@ -223,7 +265,6 @@ a:active {
     justify-content: center;
     clear: both;
     width: 100%;
-    height: 30px;
     background-color: var(--pjred);
 }
 
@@ -376,6 +417,7 @@ a:active {
     overflow: auto;
     white-space: nowrap;
     /*justify-content: center;*/
+    justify-content: space-evenly;
 }
 
 .nav-buttons a {
@@ -450,7 +492,7 @@ a:active {
     width: 100%;
     flex: 70%;
     flex-wrap: wrap;
-    display: none;
+    display: flex;
     padding: 0px 0px 20px 0px;
 }
 
@@ -458,7 +500,7 @@ a:active {
     width: 100%;
     flex: 70%;
     flex-wrap: wrap;
-    display: flex;
+    display: none;
     padding: 0px 0px 20px 0px;
 }
 
@@ -466,21 +508,21 @@ a:active {
     width: 100%;
     flex: 70%;
     flex-wrap: wrap;
-    display: none;
+    display: flex;
     padding: 0px 0px 0px 0px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 600px) {
     .slider_image img {
-        display: flex;
-    }
-    
-    .slider_image_mobile img {
         display: none;
     }
     
-    .slider_image_flavors img {
+    .slider_image_mobile img {
         display: flex;
+    }
+    
+    .slider_image_flavors img {
+        display: none;
     }
 }
 
@@ -1232,7 +1274,7 @@ a:active {
     font-weight: bold;
     color: var(--pjgreen20);
     text-decoration: none;
-    padding: 0px 5px 0px 0px;
+    padding: 0px 10px 0px 0px;
 }
 
 .footer-left table tr td a:hover {
@@ -1289,9 +1331,8 @@ a:active {
     justify-content: center;
     clear: both;
     width: 100%;
-    height: 30px;
     background-color: var(--pjred);
-    padding: 5px 0px 5px 0px;
+    padding: 4px 0px 7px 0px;
 }
 
 .copyright-content::before {
@@ -1316,6 +1357,7 @@ a:active {
     
     .footer-left table tr td a {
         font-size: 13px;
+        padding: 0px 5px 0px 0px;
     }
     
     .footer-right {
