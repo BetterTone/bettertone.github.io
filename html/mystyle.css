@@ -417,7 +417,6 @@ a:active {
     overflow: auto;
     white-space: nowrap;
     /*justify-content: center;*/
-    justify-content: space-evenly;
 }
 
 .nav-buttons a {
