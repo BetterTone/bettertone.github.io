@@ -15,10 +15,24 @@
 
 <body>
     <div id="container">
-      
+        
+        <!-- BEGIN SCREEN SIZE TESTING -->
         <div id="screensize">
+            
             <span class="screensize-details"></span>
+            &emsp;
+            <span id="demo"></span>
+
+            <script>
+                var w = window.innerWidth;
+                var h = window.innerHeight;
+
+                var x = document.getElementById("demo");
+                x.innerHTML = "Current Width: " + w + "px / Current Height: " + h + "px";
+            </script>
+       
         </div>
+        <!-- END SCREEN SIZE TESTING -->
        
         <!-- BEGIN HEADER -->
         <div class="header">
@@ -128,17 +142,66 @@
             
         </div>
         <!-- END HEADER -->
+        
+        <!-- BEGIN SLIDER -->
+        <div class="slider-wrapper">
+
+            <span id="slider-1"></span>
+            <span id="slider-2"></span>
+            <span id="slider-3"></span>
+    
+            <div class="slider-item slider-1">
+               
+                <a class="slider-arrow slider-arrow-prev" href="#slider-3"></a>
+                <a class="slider-arrow slider-arrow-next" href="#slider-2"></a>
+                
+                <div class="slider-link-container">
+                    <a href="../html/new_account.html">
+                        <span class="slider-link"></span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="slider-item slider-2">
+
+                <a class="slider-arrow slider-arrow-prev" href="#slider-1"></a>
+                <a class="slider-arrow slider-arrow-next" href="#slider-3"></a>
+                
+                <div class="slider-link-container">
+                    <a href="../html/order.html">
+                        <span class="slider-link"></span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="slider-item slider-3">
+
+                <a class="slider-arrow slider-arrow-prev" href="#slider-2"></a> 
+                <a class="slider-arrow slider-arrow-next" href="#slider-1"></a>
+                
+                <div class="slider-link-container">
+                    <a href="../html/flavors.html">
+                        <span class="slider-link"></span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END SLIDER -->
          
         <!-- BEGIN BANNER IMAGE (DESKTOP) -->
-        <div class="slider_image">
+        <!--<div class="slider_image">
             <img src=../images/module_home_slider_animation.gif alt="Create a new account and get 3 FREE mix pitchers">
-        </div>
+        </div>-->
         <!-- END BANNER IMAGE (DESKTOP) -->
         
         <!-- BEGIN BANNER IMAGE (MOBILE) -->
-        <div class="slider_image_mobile">
+        <!--<div class="slider_image_mobile">
             <img src=../images/module_home_slider_animation.gif alt="Create a new account and get 3 FREE mix pitchers">
-        </div>
+        </div>-->
         <!-- END BANNER IMAGE (MOBILE) -->
         
         <!-- BEGIN PAGE CONTENT -->
