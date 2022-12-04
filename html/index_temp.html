@@ -123,18 +123,200 @@
                         
                     </div>
                     
-                    <!-- NAVIGATION BUTTONS FOR ALL DISPLAYS -->
-                    <div class="nav-buttons">
-                        
-                        <a href="../html/index.html"><h5>Home</h5></a>
-                        <a href="../html/juice.html">Juice</a>
-                        <a href="../html/flavors.html">Flavors</a>
-                        <a href="../html/ingredients.html">Ingredients</a>
-                        <a href="../html/order.html">Order</a>
-                        <a href="../html/contact.html">Contact</a>
-                        <a href="../html/about.html">About</a>
-                        
+                    <!-- NAVIGATION BUTTONS (FOR DESKTOP) -->
+                    <div class="nav-desktop-display">
+                    
+                        <div class="nav-buttons">
+
+                            <a href="../html/index.html"><h5>Home</h5></a>
+                            <a href="../html/juice.html">Juice</a>
+                            <a href="../html/flavors.html">Flavors</a>
+                            <a href="../html/ingredients.html">Ingredients</a>
+                            <a href="../html/order.html">Order</a>
+                            <a href="../html/contact.html">Contact</a>
+                            <a href="../html/about.html">About</a>
+
+                        </div>
+                    
                     </div>
+                    
+                    <!-- NAVIGATION BUTTONS (FOR MOBILE) -->
+                    <div class="nav-mobile-display">
+
+                        <div class="nav-mobile-wrapper">
+
+                            <nav>
+
+                                <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+                                <label class="m-menu__toggle" for="menu">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F0FFF0" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                                    </svg>
+                                </label>
+                                <label class="m-menu__overlay" for="menu"></label>
+
+                                <div class="m-menu">
+
+                                    <div class="m-menu__header">
+
+                                        <label class="m-menu__toggle" for="menu">
+                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F0FFF0" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                        </label>
+
+                                        <span><h1>PENNY JUICE</h1></span>
+
+                                    </div>
+
+                                    <ul>
+                                        <h2>
+                                        <li>
+                                            <label><a href="../html/index.html">Home</a></label>
+                                        </li>
+                                        <li>
+                                            <label><a href="../html/juice.html">Juice</a></label>
+                                        </li>
+                                        <li>
+                                            <label class="a-label__chevron" for="flavors">&emsp;Flavors</label>
+                                            <input type="checkbox" id="flavors" name="flavors" class="m-menu__checkbox">
+
+                                            <div class="m-menu">
+
+                                                <div class="m-menu__header">
+
+                                                    <label class="m-menu__toggle" for="flavors">
+                                                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F0FFF0" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                                            <path d="M19 12H6M12 5l-7 7 7 7"/>
+                                                        </svg>
+                                                    </label>
+
+                                                    <span>Penny Juice Flavors</span>
+
+                                                </div>
+
+                                                <ul>
+                                                    <li>
+                                                        <label class="a-label__chevron" for="color">&emsp;Juice With Color</label>
+                                                        <input type="checkbox" id="color" name="item-2" class="m-menu__checkbox">
+
+                                                        <div class="m-menu">
+
+                                                            <div class="m-menu__header">
+
+                                                                <label class="m-menu__toggle" for="color">
+                                                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F0FFF0" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                                                        <path d="M19 12H6M12 5l-7 7 7 7"/>
+                                                                    </svg>
+                                                                </label>
+
+                                                                <span>Juice With Color</span>
+
+                                                            </div>
+
+                                                            <ul>
+                                                                <li><label><a href="../html/flavors_strawberry_banana.html">Strawberry Banana</a></label></li>
+                                                                <li><label><a href="../html/flavors_strawberry_kiwi.html">Strawberry Kiwi</a></label></li>
+                                                                <li><label><a href="../html/flavors_citrus_punch.html">Citrus Punch</a></label></li>
+                                                                <li><label><a href="../html/flavors_blue_raspberry.html">Blue Raspberry</a></label></li>
+                                                                <li><label><a href="../html/flavors_green_watermelon.html">Green Watermelon</a></label></li>
+                                                                <li><label><a href="../html/flavors_cran_apple.html">Cran-Apple</a></label></li>
+                                                                <li><label><a href="../html/flavors_orange_pineapple.html">Orange Pineapple</a></label></li>
+                                                                <li><label><a href="../html/flavors_berry.html">Berry</a></label></li>
+                                                            </ul>                
+
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <label class="a-label__chevron" for="color-free">&emsp;Color-Free Juice</label>
+                                                        <input type="checkbox" id="color-free" name="item-2" class="m-menu__checkbox">
+
+                                                        <div class="m-menu">
+
+                                                            <div class="m-menu__header">
+
+                                                                <label class="m-menu__toggle" for="color-free">
+                                                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#F0FFF0" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                                                        <path d="M19 12H6M12 5l-7 7 7 7"/>
+                                                                    </svg>
+                                                                </label>
+
+                                                                <span>Color-Free Juice</span>
+
+                                                            </div>
+
+                                                            <ul>
+                                                                <li><label><a href="../html/flavors.html">Apple</a></label></li>
+                                                                <li><label><a href="../html/flavors_grape.html">White Grape</a></label></li>
+                                                                <li><label><a href="../html/flavors_peach_mango.html">Peach Mango</a></label></li>
+                                                                <li><label><a href="../html/flavors_orange_raspberry.html">Orange Raspberry</a></label></li>
+                                                                <li><label><a href="../html/flavors_cherry.html">Cherry</a></label></li>
+                                                                <li><label><a href="../html/flavors_fruit_punch.html">Fruit Punch</a></label></li>
+                                                                <li><label><a href="../html/flavors_tangerine.html">Tangerine</a></label></li>
+                                                            </ul>                
+
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+                                        <li><label><a href="../html/ingredients.html">Ingredients</a></label></li>
+                                        <li><label><a href="../html/order.html">Order</a></label></li>
+                                        <li><label><a href="../html/contact.html">Contact</a></label></li>
+                                        <li><label><a href="../html/about.html">About</a></label></li>
+                                        <li><label><a href="../html/my_account.html">My Account</a></label></li>
+                                        </h2>
+                                    </ul>
+
+                                </div>
+
+                            </nav>
+
+                        </div>
+
+                    </div>
+                    
+                    <!-- TEMP -->
+                    
+<button id="hamburger-menu">
+  <nav id="sidebar-menu">
+    <ul>
+      <li><a href="../html/index.html">Home</a></li>
+      <li><a href="../html/juice.html">Juice</a></li>
+      <li><a href="../html/flavors.html">Flavors</a></li>
+      <li><a href="../html/ingredients.html">Ingredients</a></li>
+      <li><a href="../html/order.html">Order</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+      <li><a href="../html/about.html">About</a></li>
+      <li><a href="../html/my_account.html">My Account</a></li>
+    </ul>
+  </nav>
+</button>
+                   
+<input type="checkbox" id="hamburger-input" class="burger-shower" />
+<label id="hamburger-menu" for="hamburger-input">
+  <nav id="sidebar-menu">
+    <ul>
+      <li><a href="../html/index.html">Home</a></li>
+      <li><a href="../html/juice.html">Juice</a></li>
+      <li><a href="../html/flavors.html">Flavors</a></li>
+      <li><a href="../html/ingredients.html">Ingredients</a></li>
+      <li><a href="../html/order.html">Order</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+      <li><a href="../html/about.html">About</a></li>
+      <li><a href="../html/my_account.html">My Account</a></li>
+    </ul>
+  </nav>
+</label>
+
+<div class="overlay"></div>
+                    
+                    <!-- END TEMP -->
                     
                 </div>
                 
@@ -149,24 +331,17 @@
             <span id="slider-1"></span>
             <span id="slider-2"></span>
             <span id="slider-3"></span>
-
+    
             <div class="slider-item slider-1">
-                
-                <!--<table>
-                    <tr>
-                        <td>
-                            <h1>Not a Customer Yet?</h1>
-                            <br>
-                            <h3>Set up an account today and get a<br>
-                            FREE mix pitcher with your first order.</h3>
-                            <br><br>
-                            <h2><a href="../html/my_account.html"><b>CREATE ACCOUNT</b></a></h2>
-                        </td>
-                    </tr>
-                </table>-->
-                
+               
                 <a class="slider-arrow slider-arrow-prev" href="#slider-3"></a>
                 <a class="slider-arrow slider-arrow-next" href="#slider-2"></a>
+                
+                <div class="slider-link-container">
+                    <a href="../html/new_account.html">
+                        <span class="slider-link"></span>
+                    </a>
+                </div>
 
             </div>
 
@@ -174,6 +349,12 @@
 
                 <a class="slider-arrow slider-arrow-prev" href="#slider-1"></a>
                 <a class="slider-arrow slider-arrow-next" href="#slider-3"></a>
+                
+                <div class="slider-link-container">
+                    <a href="../html/order.html">
+                        <span class="slider-link"></span>
+                    </a>
+                </div>
 
             </div>
 
@@ -181,6 +362,12 @@
 
                 <a class="slider-arrow slider-arrow-prev" href="#slider-2"></a> 
                 <a class="slider-arrow slider-arrow-next" href="#slider-1"></a>
+                
+                <div class="slider-link-container">
+                    <a href="../html/flavors.html">
+                        <span class="slider-link"></span>
+                    </a>
+                </div>
 
             </div>
 
