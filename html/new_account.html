@@ -56,7 +56,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                <a href="../html/my_account.html"><img src=../images/header_account_active.png alt="MY ACCOUNT" width="147" height="27"></a>
+                                <a href="../html/my_account.html"><img src=../images/header_account.png alt="MY ACCOUNT" width="147" height="27"></a>
                                 </td>
                             </tr>
                             <tr>
@@ -76,6 +76,9 @@
                         
                         <table>
                             <tr>
+                                <td class="logo-spacer">
+                                    <img src=../images/header_logo_spacer.png width="39" height="34">
+                                </td>
                                 <td>
                                 <a href="../html/index.html"><img src=../images/header_logo_mobile.png alt="Penny Juice" width="676" height="34"></a>
                                 </td>
@@ -105,19 +108,64 @@
                         
                     </div>
                     
-                    <!-- NAVIGATION BUTTONS FOR ALL DISPLAYS -->
-                    <div class="nav-buttons">
-                       
-                        <a href="../html/index.html">Home</a>
-                        <a href="../html/juice.html">Juice</a>
-                        <a href="../html/flavors.html">Flavors</a>
-                        <a href="../html/ingredients.html">Ingredients</a>
-                        <a href="../html/order.html">Order</a>
-                        <a href="../html/contact.html">Contact</a>
-                        <a href="../html/about.html">About</a>
-                        
+                    <!-- NAVIGATION BUTTONS (FOR DESKTOP) -->
+                    <div class="nav-desktop-display">
+                    
+                        <div class="nav-buttons">
+
+                            <a href="../html/index.html"><h5>Home</h5></a>
+                            <a href="../html/juice.html">Juice</a>
+                            <a href="../html/flavors.html">Flavors</a>
+                            <a href="../html/ingredients.html">Ingredients</a>
+                            <a href="../html/order.html">Order</a>
+                            <a href="../html/contact.html">Contact</a>
+                            <a href="../html/about.html">About</a>
+
+                        </div>
+                    
                     </div>
                     
+                    <!-- NAVIGATION BUTTONS (FOR MOBILE) -->
+                    <div class="nav-mobile-display">
+
+                        <button id="hamburger-menu">
+                            <nav id="sidebar-menu">
+                                <ul>
+                                    <li><a href="../html/index.html">Home</a></li>
+                                    <li><a href="../html/juice.html">Juice</a></li>
+                                    <li><a href="../html/flavors.html">Flavors</a></li>
+                                    <li><a href="../html/ingredients.html">Ingredients</a></li>
+                                    <li><a href="../html/order.html">Order</a></li>
+                                    <li><a href="../html/contact.html">Contact</a></li>
+                                    <li><a href="../html/about.html">About</a></li>
+                                    <li><a href="../html/my_account.html">My Account</a></li>
+                                    <li><a href="../html/new_account.html">New Account</a></li>
+                                </ul>
+                            </nav>
+                        </button>
+
+                        <input type="checkbox" id="hamburger-input"/>
+                        <label id="hamburger-menu" for="hamburger-input">
+                            <nav id="sidebar-menu">
+                                <ul>
+                                    <li><a href="../html/index.html">Home</a></li>
+                                    <li><a href="../html/juice.html">Juice</a></li>
+                                    <li><a href="../html/flavors.html">Flavors</a></li>
+                                    <li><a href="../html/ingredients.html">Ingredients</a></li>
+                                    <li><a href="../html/order.html">Order</a></li>
+                                    <li><a href="../html/contact.html">Contact</a></li>
+                                    <li><a href="../html/about.html">About</a></li>
+                                    <li><a href="../html/my_account.html">My Account</a></li>
+                                    <li><a href="../html/new_account.html">New Account</a></li>
+                                </ul>
+                            </nav>
+                        </label>
+
+                        <div class="overlay"></div>
+
+                    </div>
+                    <!--*****************************-->
+
                 </div>
                 
             </div>
