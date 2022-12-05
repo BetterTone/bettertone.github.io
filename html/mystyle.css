@@ -1453,7 +1453,7 @@ nav {
 
 #flavors-hamburger-menu {
     position: fixed;
-    top: 135px;
+    top: 133px;
     left: 10px;
     width: 30px;
     height: 30px;
@@ -1501,7 +1501,7 @@ nav {
 
 #flavors-hamburger-menu a {
     color: var(--pjred);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     text-decoration: none;
 }
