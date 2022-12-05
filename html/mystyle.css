@@ -509,8 +509,8 @@ nav {
 
 #hamburger-menu {
     position: fixed;
-    top: 42px;
-    left: 15px;
+    top: 40px;
+    left: 10px;
     width: 30px;
     height: 30px;
     display: inline;
