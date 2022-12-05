@@ -1377,7 +1377,7 @@ nav {
 .flavors-nav-sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 171px;
+    top: 130px;
 }
 
 /* BEGIN DISPLAY SWITCHING */
