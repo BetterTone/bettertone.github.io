@@ -8,16 +8,16 @@
     --pjblue: #6699CC;
     --pjcopper: #996666;
     
-    /* RGB Values for Opacity */
+    /* NOTE: RGB Values for Opacity */
     /*background-color: rgba(102, 204, 102, 0.5);*/ /* PJ Green */
     /*background-color: rgba(214, 237, 204, 0.5); */ /* PJ Green 40 */
     /*background-color: rgba(240, 255, 240, 0.5);*/ /* PJ Green 20 */
     /*background-color: rgba(255, 51, 0, 0.5);*/ /* PJ Red */
     /*background-color: rgba(102, 153, 204, 0.5);*/ /* PJ Blue */
     
+    /* FOR TESTING */
     --nav_border: 0px dashed black;
     --nav_div_border: 0px dashed black;
-    --nav_table_tr_border: 0px dashed black;
     
     --page-content-main_border: 0px dashed red;
     --page-content-1_border: 0px dashed red;
@@ -26,15 +26,15 @@
     --page-content-box_border: 0px dashed red;
     
     --footer-complete_border: 0px dashed black;
-    --footer_div_border: 0px dashed black;
     --copyright_border: 0px dashed black;
 }
 
+/* FOR TESTING */
 table, th, td {
   border: 0px dashed black;
 }
 
-/* For testing on index.html page */
+/* FOR TESTING (ONLY ON INDEX.HTML) */
 #screensize {
     display: none;
     justify-content: flex-start;
@@ -76,7 +76,7 @@ table, th, td {
         content: "Screen Size = 600px and smaller (Extra small devices: phones)"
     }
 }
-/* End testing */
+/* END TESTING */
 
 body {
     background-color: var(--pjgreen20);
@@ -116,6 +116,23 @@ h3 {
     line-height: 20px;
 }
 
+h4 {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Roboto Slab", sans-serif;
+    display: inline;
+}
+
+h6 {
+    display: inline;
+}
+
+/* FOR ORDER & MY ACCOUNT PAGES */
 .font-h3 {
     font-size: 16px;
     font-weight: normal;
@@ -143,11 +160,6 @@ h3 {
     font-variant: small-caps;
 }
 
-h4 {
-    font-size: 13px;
-    font-weight: normal;
-}
-
 .font-h4 {
     font-size: 13px;
     font-weight: normal;
@@ -173,17 +185,6 @@ h4 {
     color: black;
     text-decoration: underline;
     font-variant: small-caps;
-}
-
-h5 {
-    font-size: 16px;
-    font-weight: bold;
-    font-family: "Roboto Slab", sans-serif;
-    display: inline;
-}
-
-h6 {
-    display: inline;
 }
 /* END HEADINGS */
 
@@ -240,10 +241,6 @@ a:active {
 
 .nav div {
     border: var(--nav_div_border);
-}
-
-.nav table tr {
-    border: var(--nav_table_tr_border);
 }
 
 .nav:after {
@@ -778,16 +775,6 @@ nav {
         display: none;
     }
 }
-
-/*@media only screen and (max-width: 600px) {
-    .slider_image img {
-        display: none;
-    }
-    
-    .slider_image_mobile img {
-        display: flex;
-    }
-}*/
 /* END BANNER IMAGES */
 
 /* BEGIN PAGE CONTENT (Version 3) */
@@ -798,7 +785,6 @@ nav {
 /* Begin Mobile Screen */
 #page-content-main {
     border: var(--page-content-main_border);
-    /*display: -ms-flexbox;*/
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
@@ -813,7 +799,6 @@ nav {
     height: auto;
     flex: 70%;
     flex-wrap: wrap;
-    /*display: flex;*/
     display: inline-flex;
 }
 
@@ -824,11 +809,6 @@ nav {
 #page-content-main a img:hover {
     transform: scale(1.1);
 }
-
-/*#page-content-main table {
-    border-collapse: collapse;
-    width: 100%;
-}*/
 
 .page-content-1 {
     border: var(--page-content-1_border);
@@ -882,21 +862,6 @@ nav {
 .page-content-align {
     text-align: center;    
 }
-
-/*.page-content-image {
-	display: inline-block;
-	width: auto;
-	max-width: 50%;
-	align-self: center;
-    order: -1;
-    padding: 0px 0px 0px 0px;
-}
-
-.page-content-image img {
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-}*/
 /* End Mobile Screen */
 
 /* Begin Desktop Screen */
@@ -956,19 +921,6 @@ nav {
     .page-content-align {
         text-align: left;    
     }
-    
-    /*.page-content-image {
-        max-width: 100%;
-        align-self: center;
-        justify-content: center;
-        align-items: center;   
-        order: 0;
-    }
-
-    .page-content-image img {
-        align-self: center;
-    }*/
-
 }
 /* End Desktop Screen */
 
@@ -1091,7 +1043,6 @@ nav {
 .form li p {
     padding: 0px 25px 5px 0px;
     font-weight: bold;
-    /*letter-spacing: .09em;*/
     text-transform: none;
     text-align: left;
 }
@@ -1127,7 +1078,6 @@ nav {
     color: var(--pjgreen20);
     font-weight: bold;
     text-transform: none;
-    /*letter-spacing: .09em;*/
     border-radius: 50px 50px 50px 50px;
 }
 
@@ -1285,7 +1235,6 @@ nav {
 }
 
 .flavors-nav table {
-    /*background-image: linear-gradient(to right, var(--pjblue), var(--pjgreen), var(--pjblue));*/
     background-color: var(--pjgreen40);
     width: 100%;
 }
